@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Артём Северов — психолог</title>
+<meta name="description" content="Психолог Артём Северов. Онлайн и офлайн консультации.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+  body { margin: 0; background: #E16C00; }
+  * { box-sizing: border-box; }
+  a { color: #2F6A8F; text-decoration: none; }
+  a:hover { color: #4A8CB0; }
+  ::selection { background: #FFCAA7; color: #12283A; }
+
+  /* хвост страницы под последней главой: место под картинку внизу.
+     до 1200px ширины экрана колонке с текстом не хватает полей сбоку,
+     поэтому картинка остаётся по центру под блоком; шире — уезжает вправо. */
+  .tail-space { padding-bottom: clamp(128px, calc(25.5vw + 25px), 200px); }
+  .footer-prince-wrap {
+    position: absolute;
+    z-index: 4;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+  }
+  .footer-prince { display: block; width: clamp(130px, 32vw, 220px); }
+
+  /* шапка: полная ширина страницы, без переноса на новую строку */
+  .site-header {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 20px;
+    padding: clamp(20px, 5vw, 34px) clamp(16px, 4vw, 40px) 0;
+    flex-wrap: nowrap;
+  }
+  .site-logo { flex: 0 0 auto; font-family: 'Cormorant Garamond', serif; font-size: 20px; letter-spacing: 0.02em; color: #12283A; white-space: nowrap; }
+  .site-nav {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    font-size: 13px;
+    color: #2F5C78;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-right: 16px;
+    mask-image: linear-gradient(to right, black calc(100% - 16px), transparent 100%);
+  }
+  .site-nav::-webkit-scrollbar { display: none; }
+  .site-nav a { flex: 0 0 auto; white-space: nowrap; color: #2F5C78; }
+
+  @media (min-width: 700px) {
+    .site-logo { font-size: 22px; }
+    .site-nav { gap: 24px; font-size: 13.5px; }
+  }
+
+  /* только на действительно широких экранах у колонки с текстом достаточно
+     свободного поля справа, чтобы луна встала рядом с блоком, а не под ним */
+  @media (min-width: 1200px) {
+    .tail-space { padding-bottom: clamp(40px, 5vw, 90px); }
+    .footer-prince-wrap {
+      left: auto;
+      right: clamp(24px, 4vw, 64px);
+      transform: none;
+    }
+    .footer-prince { width: clamp(200px, 20vw, 380px); }
+  }
+</style>
+</head>
+<body>
+
+<div style="position: relative; overflow: hidden; min-height: 100vh; min-height: 100dvh; font-family: Manrope, system-ui, sans-serif; background: linear-gradient(180deg, #E16C00 0%, #EA8531 8%, #F29F5E 16%, #FFCAA7 26%, #F7DCC8 36%, #EDE6E4 46%, #E7E6ED 55%, #C9DCE9 66%, #87C5EA 76%, #5E93AC 86%, #3E698A 94%, #315A72 100%);">
+
+  <!-- мягкие световые пятна -->
+  <div style="position: absolute; top: 44%; right: -8%; width: 62%; height: 150px; border-radius: 50%; background: #87C5EA; filter: blur(56px); opacity: 0.35;"></div>
+  <div style="position: absolute; top: 64%; left: -12%; width: 66%; height: 180px; border-radius: 50%; background: #315A72; filter: blur(64px); opacity: 0.3;"></div>
+
+  <!-- звёздная пыль на фоне -->
+  <div style="position: absolute; top: 74%; left: 0; right: 0; bottom: 0; pointer-events: none; opacity: 0.9; background-image: radial-gradient(1.6px 1.6px at 12% 8%, #F4FBFA 50%, transparent 50%), radial-gradient(1.2px 1.2px at 28% 16%, #DDEFEC 50%, transparent 50%), radial-gradient(2px 2px at 46% 6%, #FFFFFF 50%, transparent 50%), radial-gradient(1.4px 1.4px at 63% 19%, #E8F5F3 50%, transparent 50%), radial-gradient(1.1px 1.1px at 79% 11%, #CFE6E3 50%, transparent 50%), radial-gradient(1.8px 1.8px at 91% 23%, #FFFFFF 50%, transparent 50%), radial-gradient(1.3px 1.3px at 8% 34%, #E4F2F0 50%, transparent 50%), radial-gradient(1.6px 1.6px at 34% 41%, #FFFFFF 50%, transparent 50%), radial-gradient(1.1px 1.1px at 55% 37%, #CFE6E3 50%, transparent 50%), radial-gradient(1.9px 1.9px at 72% 47%, #F4FBFA 50%, transparent 50%), radial-gradient(1.2px 1.2px at 88% 39%, #DDEFEC 50%, transparent 50%), radial-gradient(1.5px 1.5px at 18% 56%, #FFFFFF 50%, transparent 50%), radial-gradient(1.1px 1.1px at 41% 62%, #CFE6E3 50%, transparent 50%), radial-gradient(1.7px 1.7px at 66% 69%, #F4FBFA 50%, transparent 50%), radial-gradient(1.2px 1.2px at 84% 74%, #E8F5F3 50%, transparent 50%), radial-gradient(1.4px 1.4px at 24% 82%, #FFFFFF 50%, transparent 50%), radial-gradient(1.1px 1.1px at 52% 88%, #DDEFEC 50%, transparent 50%), radial-gradient(1.6px 1.6px at 77% 93%, #F4FBFA 50%, transparent 50%);"></div>
+
+  <!-- декоративные звёзды-искры -->
+  <div style="position: absolute; top: 76%; left: 0; right: 0; bottom: 0; pointer-events: none;">
+    <svg viewBox="0 0 60 60" style="position: absolute; top: 5%; left: 9%; width: 40px; height: 40px; opacity: 0.8;" aria-hidden="true"><path d="M22 2 C 23.4 12.5, 27.5 16.6, 38 18 C 27.5 19.4, 23.4 23.5, 22 34 C 20.6 23.5, 16.5 19.4, 6 18 C 16.5 16.6, 20.6 12.5, 22 2 Z" fill="#FFF9E6" stroke="#FFF9E6" stroke-width="1.1"></path><path d="M45 24 C 45.8 30, 48 32.2, 54 33 C 48 33.8, 45.8 36, 45 42 C 44.2 36, 42 33.8, 36 33 C 42 32.2, 44.2 30, 45 24 Z" fill="#FFF9E6" stroke="#FFF9E6" stroke-width="1"></path></svg>
+    <svg viewBox="0 0 60 60" style="position: absolute; top: 13%; right: 13%; width: 30px; height: 30px; opacity: 0.7;" aria-hidden="true"><path d="M30 6 C 31.6 22, 36 26.4, 52 28 C 36 29.6, 31.6 34, 30 50 C 28.4 34, 24 29.6, 8 28 C 24 26.4, 28.4 22, 30 6 Z" fill="#FFF9E6" stroke="#FFF9E6" stroke-width="1.1"></path></svg>
+    <svg viewBox="0 0 60 60" style="position: absolute; top: 26%; left: 21%; width: 20px; height: 20px; opacity: 0.6;" aria-hidden="true"><path d="M30 10 C 31.4 23, 35 26.6, 48 28 C 35 29.4, 31.4 33, 30 46 C 28.6 33, 25 29.4, 12 28 C 25 26.6, 28.6 23, 30 10 Z" fill="#FFF9E6" stroke="#FFF9E6" stroke-width="1.3"></path></svg>
+    <svg viewBox="0 0 60 60" style="position: absolute; top: 35%; right: 21%; width: 38px; height: 38px; opacity: 0.75;" aria-hidden="true"><path d="M24 4 C 25.5 15.5, 29.5 19.5, 41 21 C 29.5 22.5, 25.5 26.5, 24 38 C 22.5 26.5, 18.5 22.5, 7 21 C 18.5 19.5, 22.5 15.5, 24 4 Z" fill="#FFF9E6" stroke="#FFF9E6" stroke-width="1.1"></path><path d="M46 30 C 46.7 35.3, 48.7 37.3, 54 38 C 48.7 38.7, 46.7 40.7, 46 46 C 45.3 40.7, 43.3 38.7, 38 38 C 43.3 37.3, 45.3 35.3, 46 30 Z" fill="#FFF9E6" stroke="#FFF9E6" stroke-width="1"></path></svg>
+    <svg viewBox="0 0 60 60" style="position: absolute; top: 49%; left: 7%; width: 26px; height: 26px; opacity: 0.65;" aria-hidden="true"><path d="M30 8 C 31.5 22.5, 37.5 26.5, 52 28 C 37.5 29.5, 31.5 33.5, 30 48 C 28.5 33.5, 22.5 29.5, 8 28 C 22.5 26.5, 28.5 22.5, 30 8 Z" fill="#FFF9E6" stroke="#FFF9E6" stroke-width="1.1"></path></svg>
+    <svg viewBox="0 0 60 60" style="position: absolute; top: 59%; right: 8%; width: 18px; height: 18px; opacity: 0.6;" aria-hidden="true"><path d="M30 12 C 31.2 23.5, 34.5 26.8, 46 28 C 34.5 29.2, 31.2 32.5, 30 44 C 28.8 32.5, 25.5 29.2, 14 28 C 25.5 26.8, 28.8 23.5, 30 12 Z" fill="#FFF9E6" stroke="#FFF9E6" stroke-width="1.4"></path></svg>
+    <svg viewBox="0 0 60 60" style="position: absolute; top: 72%; left: 24%; width: 34px; height: 34px; opacity: 0.7;" aria-hidden="true"><path d="M26 5 C 27.4 17, 31.5 21, 43.5 22.5 C 31.5 24, 27.4 28, 26 40 C 24.6 28, 20.5 24, 8.5 22.5 C 20.5 21, 24.6 17, 26 5 Z" fill="#FFF9E6" stroke="#FFF9E6" stroke-width="1.1"></path><path d="M45 34 C 45.6 38.4, 47.6 40.4, 52 41 C 47.6 41.6, 45.6 43.6, 45 48 C 44.4 43.6, 42.4 41.6, 38 41 C 42.4 40.4, 44.4 38.4, 45 34 Z" fill="#FFF9E6" stroke="#FFF9E6" stroke-width="1"></path></svg>
+    <svg viewBox="0 0 60 60" style="position: absolute; top: 85%; right: 18%; width: 22px; height: 22px; opacity: 0.65;" aria-hidden="true"><path d="M30 10 C 31.4 23, 35 26.6, 48 28 C 35 29.4, 31.4 33, 30 46 C 28.6 33, 25 29.4, 12 28 C 25 26.6, 28.6 23, 30 10 Z" fill="#FFF9E6" stroke="#FFF9E6" stroke-width="1.3"></path></svg>
+  </div>
+
+  <header class="site-header">
+    <div class="site-logo">Артём Северов</div>
+    <nav class="site-nav">
+      <a href="#ch1">Обо мне</a>
+      <a href="#ch2">С чем работаю</a>
+      <a href="#ch3">Подход</a>
+      <a href="#ch4">Как проходят встречи</a>
+      <a href="#ch6">Записаться</a>
+    </nav>
+  </header>
+
+  <!-- Пролог -->
+  <section style="position: relative; z-index: 3; max-width: 1180px; margin: 0 auto; padding: clamp(64px, 13vw, 110px) clamp(20px, 5vw, 48px) clamp(56px, 11vw, 96px); text-align: center;">
+    <div style="width: min(200px, 46vw); margin: 0 auto 34px;">
+      <img src="foto1.png" alt="Принц на маленькой планете" loading="lazy" style="display: block; width: 100%; border-radius: 4px;">
+    </div>
+    <div style="font-size: 10.5px; letter-spacing: 0.22em; text-transform: uppercase; color: #163044; margin-bottom: 24px;">Психолог · очно и онлайн</div>
+    <h1 style="font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(34px, 8vw, 60px); line-height: 1.1; color: #12283A; margin: 0 auto 22px; max-width: 19em; text-wrap: pretty;">Не обязательно ждать, пока станет совсем тяжело</h1>
+    <p style="font-size: clamp(15px, 4vw, 17.5px); line-height: 1.8; color: #163044; max-width: 31em; margin: 0 auto 40px;">Работаю с тревогой, выгоранием, трудностями в отношениях и самооценкой. Ниже — коротко о том, как проходят встречи и сколько стоит консультация.</p>
+    <div style="display: flex; gap: 16px; justify-content: center; align-items: center; flex-wrap: wrap;">
+      <a href="#ch6" style="background: #12283A; color: #FFF3E6; padding: 14px 30px; font-size: 14.5px; border-radius: 999px; box-shadow: 0 14px 30px rgba(18,40,58,0.3);">Записаться на консультацию</a>
+      <a href="#ch1" style="color: #163044; font-size: 14.5px;">Узнать больше обо мне</a>
+    </div>
+  </section>
+
+  <div class="tail-space" style="position: relative; z-index: 3; width: min(600px, 100%); margin: 0 auto; padding-left: clamp(20px, 6vw, 40px); padding-right: clamp(20px, 6vw, 40px); display: grid; gap: clamp(40px, 8vw, 64px);">
+
+    <!-- Обо мне -->
+    <section id="ch1" style="text-align: center; background: #FFCAA7; padding: clamp(34px, 7vw, 46px) clamp(24px, 6vw, 40px); border-radius: 3px;">
+      <div style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 15px; color: #163044; margin-bottom: 14px;">О психологе</div>
+      <h2 style="font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(28px, 6.5vw, 38px); line-height: 1.2; color: #12283A; margin: 0 0 26px;">Обо мне</h2>
+      <p style="margin: 0 0 18px; font-size: 15px; line-height: 1.85; color: #163044; text-align: left;">Меня зовут Артём, я практикующий психолог с двенадцатилетним опытом. Работаю с людьми, которым трудно молчать о том, что происходит внутри. Окончил факультет психологии, прошёл длительную подготовку по человекоцентрированному подходу, регулярно прохожу личную терапию и супервизию.</p>
+      <p style="margin: 0 0 28px; font-size: 15px; line-height: 1.85; color: #163044; text-align: left;">До психологии работал в другой сфере и хорошо знаю, как выглядит выгорание изнутри. Поэтому о работе, деньгах и усталости говорю так же серьёзно, как о детских историях.</p>
+      <!-- фото портрета добавим позже -->
+    </section>
+
+    <!-- С чем работаю -->
+    <section id="ch2" style="text-align: center; background: #E7E6ED; padding: clamp(20px, 4vw, 26px) clamp(24px, 6vw, 40px) clamp(34px, 7vw, 46px); border-radius: 3px;">
+      <div style="width: min(210px, 54vw); margin: 0 auto 12px;">
+        <img src="foto2.png" alt="Роза" loading="lazy" style="display: block; width: 100%; border-radius: 4px;">
+      </div>
+      <div style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 15px; color: #163044; margin-bottom: 14px;">С чем работаю</div>
+      <h2 style="font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(28px, 6.5vw, 38px); line-height: 1.2; color: #12283A; margin: 0 0 26px;">С какими запросами приходят</h2>
+      <p style="margin: 0 0 26px; font-size: 15px; line-height: 1.85; color: #163044; text-align: left;">Поводом редко становится одна большая причина. Чаще это накопившееся: не спится, всё раздражает, вроде всё в порядке — а радости нет.</p>
+      <div style="display: grid; gap: 0; text-align: left;">
+        <div style="display: flex; gap: 14px; align-items: baseline; padding: 12px 0; border-bottom: 1px solid rgba(60,70,66,0.18); font-size: 15px; line-height: 1.6; color: #152B36;">
+          <span style="font-family: ui-monospace, Menlo, monospace; font-size: 10.5px; color: #1D323E;">01</span>
+          <span>тревога, которая не выключается</span>
+        </div>
+        <div style="display: flex; gap: 14px; align-items: baseline; padding: 12px 0; border-bottom: 1px solid rgba(60,70,66,0.18); font-size: 15px; line-height: 1.6; color: #152B36;">
+          <span style="font-family: ui-monospace, Menlo, monospace; font-size: 10.5px; color: #1D323E;">02</span>
+          <span>усталость и выгорание</span>
+        </div>
+        <div style="display: flex; gap: 14px; align-items: baseline; padding: 12px 0; border-bottom: 1px solid rgba(60,70,66,0.18); font-size: 15px; line-height: 1.6; color: #152B36;">
+          <span style="font-family: ui-monospace, Menlo, monospace; font-size: 10.5px; color: #1D323E;">03</span>
+          <span>трудности в отношениях</span>
+        </div>
+        <div style="display: flex; gap: 14px; align-items: baseline; padding: 12px 0; border-bottom: 1px solid rgba(60,70,66,0.18); font-size: 15px; line-height: 1.6; color: #152B36;">
+          <span style="font-family: ui-monospace, Menlo, monospace; font-size: 10.5px; color: #1D323E;">04</span>
+          <span>потеря опоры после перемен</span>
+        </div>
+        <div style="display: flex; gap: 14px; align-items: baseline; padding: 12px 0; border-bottom: 1px solid rgba(60,70,66,0.18); font-size: 15px; line-height: 1.6; color: #152B36;">
+          <span style="font-family: ui-monospace, Menlo, monospace; font-size: 10.5px; color: #1D323E;">05</span>
+          <span>самокритика и «я недостаточно»</span>
+        </div>
+        <div style="display: flex; gap: 14px; align-items: baseline; padding: 12px 0; border-bottom: 1px solid rgba(60,70,66,0.18); font-size: 15px; line-height: 1.6; color: #152B36;">
+          <span style="font-family: ui-monospace, Menlo, monospace; font-size: 10.5px; color: #1D323E;">06</span>
+          <span>желание понять себя без повода</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Подход в работе -->
+    <section id="ch3" style="text-align: center; background: #87C5EA; padding: clamp(34px, 7vw, 46px) clamp(24px, 6vw, 40px); border-radius: 3px;">
+      <div style="width: min(170px, 42vw); margin: 0 auto 24px;">
+        <img src="foto3.png" alt="Лис" loading="lazy" style="display: block; width: 100%; border-radius: 4px;">
+      </div>
+      <div style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 15px; color: #163044; margin-bottom: 14px;">Подход в работе</div>
+      <h2 style="font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(28px, 6.5vw, 38px); line-height: 1.2; color: #12283A; margin: 0 0 26px;">Как я работаю</h2>
+      <p style="margin: 0 0 30px; font-family: 'Cormorant Garamond', serif; font-size: clamp(20px, 5vw, 25px); line-height: 1.45; color: #12283A;">Вы — эксперт по своей жизни. Моя работа — создать условия, в которых это снова слышно.</p>
+      <div style="display: grid; gap: 22px; text-align: left;">
+        <div>
+          <div style="font-size: 15px; color: #163044; margin-bottom: 6px;">Принятие</div>
+          <p style="margin: 0; font-size: 14.5px; line-height: 1.8; color: #163044;">Ничего из сказанного вами не будет оценено. Здесь не нужно быть удобным клиентом.</p>
+        </div>
+        <div>
+          <div style="font-size: 15px; color: #163044; margin-bottom: 6px;">Подлинность</div>
+          <p style="margin: 0; font-size: 14.5px; line-height: 1.8; color: #163044;">Я остаюсь живым человеком в кабинете, а не нейтральной фигурой без реакций.</p>
+        </div>
+        <div>
+          <div style="font-size: 15px; color: #163044; margin-bottom: 6px;">Ваш темп</div>
+          <p style="margin: 0; font-size: 14.5px; line-height: 1.8; color: #163044;">Мы не идём глубже, чем вы готовы сегодня. Пауза — тоже часть работы.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Формат встреч -->
+    <section id="ch4" style="text-align: center; color: #F2F6FA; background: #315A72; padding: clamp(34px, 7vw, 46px) clamp(24px, 6vw, 40px); border-radius: 3px;">
+      <div style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 15px; color: #FFFFFF; margin-bottom: 14px;">Формат встреч</div>
+      <h2 style="font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(28px, 6.5vw, 38px); line-height: 1.2; margin: 0 0 26px;">Как проходят консультации</h2>
+      <div style="display: grid; gap: 0; text-align: left;">
+        <div style="display: grid; grid-template-columns: 38px 1fr; gap: 18px; padding: 18px 0; border-top: 1px solid rgba(242,248,247,0.3);">
+          <div style="font-family: 'Cormorant Garamond', serif; font-size: 22px; line-height: 1; color: #FFD9B8;">01</div>
+          <div>
+            <div style="font-size: 15.5px; margin-bottom: 6px;">Знакомство, 30 минут</div>
+            <p style="margin: 0; font-size: 14px; line-height: 1.8; color: #FFFFFF;">Короткий разговор без оплаты: вы рассказываете, что происходит, я — как могу быть полезен.</p>
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: 38px 1fr; gap: 18px; padding: 18px 0; border-top: 1px solid rgba(242,248,247,0.3);">
+          <div style="font-family: 'Cormorant Garamond', serif; font-size: 22px; line-height: 1; color: #FFD9B8;">02</div>
+          <div>
+            <div style="font-size: 15.5px; margin-bottom: 6px;">Первые встречи</div>
+            <p style="margin: 0; font-size: 14px; line-height: 1.8; color: #FFFFFF;">Три-четыре сессии, чтобы осмотреться и сформулировать, к чему идём.</p>
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: 38px 1fr; gap: 18px; padding: 18px 0; border-top: 1px solid rgba(242,248,247,0.3);">
+          <div style="font-family: 'Cormorant Garamond', serif; font-size: 22px; line-height: 1; color: #FFD9B8;">03</div>
+          <div>
+            <div style="font-size: 15.5px; margin-bottom: 6px;">Регулярная работа</div>
+            <p style="margin: 0; font-size: 14px; line-height: 1.8; color: #E9F1F7;">Раз в неделю, в фиксированное время. Регулярность важнее интенсивности.</p>
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: 38px 1fr; gap: 18px; padding: 18px 0; border-top: 1px solid rgba(242,248,247,0.3); border-bottom: 1px solid rgba(242,248,247,0.3);">
+          <div style="font-family: 'Cormorant Garamond', serif; font-size: 22px; line-height: 1; color: #FFD9B8;">04</div>
+          <div>
+            <div style="font-size: 15.5px; margin-bottom: 6px;">Завершение</div>
+            <p style="margin: 0; font-size: 14px; line-height: 1.8; color: #E9F1F7;">Терапию заканчивают, а не бросают: на это отводятся отдельные встречи.</p>
+          </div>
+        </div>
+      </div>
+      <div style="width: min(160px, 40vw); margin: 30px auto 0;">
+        <img src="foto4.png" alt="Принц и лис вместе" loading="lazy" style="display: block; width: 100%; border-radius: 4px;">
+      </div>
+    </section>
+
+    <!-- Стоимость -->
+    <section id="ch5" style="text-align: center; color: #F1F5F8; background: #244A66; padding: clamp(34px, 7vw, 46px) clamp(24px, 6vw, 40px); border-radius: 3px;">
+      <div style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 15px; color: #FFFFFF; margin-bottom: 14px;">Стоимость</div>
+      <h2 style="font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(28px, 6.5vw, 38px); line-height: 1.2; margin: 0 0 30px;">Стоимость консультаций</h2>
+      <div style="display: grid; gap: 26px; text-align: left;">
+        <div>
+          <div style="font-family: 'Cormorant Garamond', serif; font-size: clamp(28px, 7vw, 36px); line-height: 1;">Бесплатно</div>
+          <div style="font-size: 13.5px; color: #C9D6E2; margin-top: 8px;">Знакомство · 30 минут, онлайн</div>
+        </div>
+        <div style="height: 1px; background: rgba(241,246,245,0.22);"></div>
+        <div>
+          <div style="font-family: 'Cormorant Garamond', serif; font-size: clamp(28px, 7vw, 36px); line-height: 1;">5 000 ₽</div>
+          <div style="font-size: 13.5px; color: #C9D6E2; margin-top: 8px;">Индивидуальная сессия · 50 минут</div>
+        </div>
+        <p style="margin: 0; font-size: 13.5px; line-height: 1.8; color: #CDD8E4;">Отмена без оплаты — не позднее чем за сутки. Для студентов и людей в трудной ситуации есть несколько мест по сниженной стоимости.</p>
+      </div>
+    </section>
+
+    <!-- Запись -->
+    <section id="ch6" style="text-align: center; color: #F4F8FB; background: #14303F; padding: clamp(40px, 8vw, 52px) clamp(24px, 6vw, 40px); border-radius: 3px;">
+      <div style="width: min(140px, 36vw); margin: 0 auto 26px;">
+        <img src="foto5.png" alt="Звезда или планета" loading="lazy" style="display: block; width: 100%; border-radius: 4px;">
+      </div>
+      <div style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 15px; color: #A9D8F2; margin-bottom: 14px;">Запись на консультацию</div>
+      <h2 style="font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(26px, 6.5vw, 36px); line-height: 1.24; margin: 0 0 18px; text-wrap: pretty;">Если вы дочитали до этого места — вероятно, стоит поговорить</h2>
+      <p style="margin: 0 auto 30px; font-size: 14.5px; line-height: 1.85; color: #CFE3EE; max-width: 30em;">Напишите пару слов о том, что происходит. Я отвечаю в течение дня и предложу время для знакомства.</p>
+      <div style="display: grid; gap: 12px; max-width: 340px; margin: 0 auto;">
+        <a href="#ch6" style="background: #E7E6ED; color: #1E3A4D; padding: 14px 26px; font-size: 14px; border-radius: 999px; text-align: center;">Написать в Telegram</a>
+        <a href="mailto:hello@example.com" style="border: 1px solid rgba(231,230,237,0.4); color: #F4F8FB; padding: 14px 26px; font-size: 14px; border-radius: 999px; text-align: center;">hello@example.com</a>
+      </div>
+      <div style="display: flex; justify-content: space-between; gap: 20px; margin-top: 54px; padding-top: 18px; border-top: 1px solid rgba(231,230,237,0.18); font-size: 12px; color: #9CC3DA;">
+        <span>Артём Северов · психолог</span>
+        <span>© 2026</span>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- принц у нижнего края страницы -->
+  <div class="footer-prince-wrap">
+    <img src="main_f.png" alt="Принц" loading="lazy" class="footer-prince">
+  </div>
+</div>
+
+</body>
+</html>
