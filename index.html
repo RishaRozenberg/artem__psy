@@ -11,11 +11,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
-  body { margin: 0; background: #E16C00; }
+  body { margin: 0; background: #24475F; }
   * { box-sizing: border-box; }
-  a { color: #2F6A8F; text-decoration: none; }
-  a:hover { color: #4A8CB0; }
-  ::selection { background: #FFCAA7; color: #12283A; }
+  a { color: #3E6E90; text-decoration: none; }
+  a:hover { color: #5C86A0; }
+  ::selection { background: #D9EAF5; color: #1E3A4D; }
 
   /* хвост страницы под последней главой: место под картинку внизу.
      до 1200px ширины экрана колонке с текстом не хватает полей сбоку,
@@ -42,13 +42,13 @@
     padding: clamp(20px, 5vw, 34px) clamp(16px, 4vw, 40px) 0;
     flex-wrap: nowrap;
   }
-  .site-logo { flex: 0 0 auto; font-family: 'Cormorant Garamond', serif; font-size: 20px; letter-spacing: 0.02em; color: #12283A; white-space: nowrap; }
+  .site-logo { flex: 0 0 auto; font-family: 'Cormorant Garamond', serif; font-size: 20px; letter-spacing: 0.02em; color: #1E3A4D; white-space: nowrap; }
   .site-nav {
     display: flex;
     align-items: center;
     gap: 18px;
     font-size: 13px;
-    color: #2F5C78;
+    color: #3E6E90;
     flex-wrap: nowrap;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -57,7 +57,7 @@
     mask-image: linear-gradient(to right, black calc(100% - 16px), transparent 100%);
   }
   .site-nav::-webkit-scrollbar { display: none; }
-  .site-nav a { flex: 0 0 auto; white-space: nowrap; color: #2F5C78; }
+  .site-nav a { flex: 0 0 auto; white-space: nowrap; color: #3E6E90; }
 
   @media (min-width: 700px) {
     .site-logo { font-size: 22px; }
@@ -79,11 +79,7 @@
 </head>
 <body>
 
-<div style="position: relative; overflow: hidden; min-height: 100vh; min-height: 100dvh; font-family: Manrope, system-ui, sans-serif; background: linear-gradient(180deg, #E16C00 0%, #EA8531 8%, #F29F5E 16%, #FFCAA7 26%, #F7DCC8 36%, #EDE6E4 46%, #E7E6ED 55%, #C9DCE9 66%, #87C5EA 76%, #5E93AC 86%, #3E698A 94%, #315A72 100%);">
-
-  <!-- мягкие световые пятна -->
-  <div style="position: absolute; top: 44%; right: -8%; width: 62%; height: 150px; border-radius: 50%; background: #87C5EA; filter: blur(56px); opacity: 0.35;"></div>
-  <div style="position: absolute; top: 64%; left: -12%; width: 66%; height: 180px; border-radius: 50%; background: #315A72; filter: blur(64px); opacity: 0.3;"></div>
+<div style="position: relative; overflow: hidden; min-height: 100vh; min-height: 100dvh; font-family: Manrope, system-ui, sans-serif; background: linear-gradient(180deg, #F2A968 0%, #F0B87F 6%, #EDC89C 12%, #E4D2C0 16%, #C9D6DE 20%, #AEC8DA 25%, #97BBD3 31%, #7FAAC8 40%, #6FA0C0 46%, #5F92B6 53%, #5286AC 60%, #4779A0 70%, #3E6E93 78%, #356184 86%, #2C5474 93%, #24475F 100%);">
 
   <!-- звёздная пыль на фоне -->
   <div style="position: absolute; top: 74%; left: 0; right: 0; bottom: 0; pointer-events: none; opacity: 0.9; background-image: radial-gradient(1.6px 1.6px at 12% 8%, #F4FBFA 50%, transparent 50%), radial-gradient(1.2px 1.2px at 28% 16%, #DDEFEC 50%, transparent 50%), radial-gradient(2px 2px at 46% 6%, #FFFFFF 50%, transparent 50%), radial-gradient(1.4px 1.4px at 63% 19%, #E8F5F3 50%, transparent 50%), radial-gradient(1.1px 1.1px at 79% 11%, #CFE6E3 50%, transparent 50%), radial-gradient(1.8px 1.8px at 91% 23%, #FFFFFF 50%, transparent 50%), radial-gradient(1.3px 1.3px at 8% 34%, #E4F2F0 50%, transparent 50%), radial-gradient(1.6px 1.6px at 34% 41%, #FFFFFF 50%, transparent 50%), radial-gradient(1.1px 1.1px at 55% 37%, #CFE6E3 50%, transparent 50%), radial-gradient(1.9px 1.9px at 72% 47%, #F4FBFA 50%, transparent 50%), radial-gradient(1.2px 1.2px at 88% 39%, #DDEFEC 50%, transparent 50%), radial-gradient(1.5px 1.5px at 18% 56%, #FFFFFF 50%, transparent 50%), radial-gradient(1.1px 1.1px at 41% 62%, #CFE6E3 50%, transparent 50%), radial-gradient(1.7px 1.7px at 66% 69%, #F4FBFA 50%, transparent 50%), radial-gradient(1.2px 1.2px at 84% 74%, #E8F5F3 50%, transparent 50%), radial-gradient(1.4px 1.4px at 24% 82%, #FFFFFF 50%, transparent 50%), radial-gradient(1.1px 1.1px at 52% 88%, #DDEFEC 50%, transparent 50%), radial-gradient(1.6px 1.6px at 77% 93%, #F4FBFA 50%, transparent 50%);"></div>
@@ -116,34 +112,34 @@
     <div style="width: min(200px, 46vw); margin: 0 auto 34px;">
       <img src="foto1.png" alt="Принц на маленькой планете" loading="lazy" style="display: block; width: 100%; border-radius: 4px;">
     </div>
-    <div style="font-size: 10.5px; letter-spacing: 0.22em; text-transform: uppercase; color: #163044; margin-bottom: 24px;">Психолог · очно и онлайн</div>
-    <h1 style="font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(34px, 8vw, 60px); line-height: 1.1; color: #12283A; margin: 0 auto 22px; max-width: 19em; text-wrap: pretty;">Не обязательно ждать, пока станет совсем тяжело</h1>
-    <p style="font-size: clamp(15px, 4vw, 17.5px); line-height: 1.8; color: #163044; max-width: 31em; margin: 0 auto 40px;">Работаю с тревогой, выгоранием, трудностями в отношениях и самооценкой. Ниже — коротко о том, как проходят встречи и сколько стоит консультация.</p>
+    <div style="font-size: 10.5px; letter-spacing: 0.22em; text-transform: uppercase; color: #3E6E90; margin-bottom: 24px;">Психолог · очно и онлайн</div>
+    <h1 style="font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(34px, 8vw, 60px); line-height: 1.1; color: #1E3A4D; margin: 0 auto 22px; max-width: 19em; text-wrap: pretty;">Не обязательно ждать, пока станет совсем тяжело</h1>
+    <p style="font-size: clamp(15px, 4vw, 17.5px); line-height: 1.8; color: #33505F; max-width: 31em; margin: 0 auto 40px;">Работаю с тревогой, выгоранием, трудностями в отношениях и самооценкой. Ниже — коротко о том, как проходят встречи и сколько стоит консультация.</p>
     <div style="display: flex; gap: 16px; justify-content: center; align-items: center; flex-wrap: wrap;">
-      <a href="#ch6" style="background: #12283A; color: #FFF3E6; padding: 14px 30px; font-size: 14.5px; border-radius: 999px; box-shadow: 0 14px 30px rgba(18,40,58,0.3);">Записаться на консультацию</a>
-      <a href="#ch1" style="color: #163044; font-size: 14.5px;">Узнать больше обо мне</a>
+      <a href="#ch6" style="background: #1E3A4D; color: #FFF6EC; padding: 14px 30px; font-size: 14.5px; border-radius: 999px; box-shadow: 0 14px 30px rgba(30,58,77,0.25);">Записаться на консультацию</a>
+      <a href="#ch1" style="color: #3E6E90; font-size: 14.5px;">Узнать больше обо мне</a>
     </div>
   </section>
 
   <div class="tail-space" style="position: relative; z-index: 3; width: min(600px, 100%); margin: 0 auto; padding-left: clamp(20px, 6vw, 40px); padding-right: clamp(20px, 6vw, 40px); display: grid; gap: clamp(40px, 8vw, 64px);">
 
     <!-- Обо мне -->
-    <section id="ch1" style="text-align: center; background: #FFCAA7; padding: clamp(34px, 7vw, 46px) clamp(24px, 6vw, 40px); border-radius: 3px;">
-      <div style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 15px; color: #163044; margin-bottom: 14px;">О психологе</div>
-      <h2 style="font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(28px, 6.5vw, 38px); line-height: 1.2; color: #12283A; margin: 0 0 26px;">Обо мне</h2>
-      <p style="margin: 0 0 18px; font-size: 15px; line-height: 1.85; color: #163044; text-align: left;">Меня зовут Артём, я практикующий психолог с двенадцатилетним опытом. Работаю с людьми, которым трудно молчать о том, что происходит внутри. Окончил факультет психологии, прошёл длительную подготовку по человекоцентрированному подходу, регулярно прохожу личную терапию и супервизию.</p>
-      <p style="margin: 0 0 28px; font-size: 15px; line-height: 1.85; color: #163044; text-align: left;">До психологии работал в другой сфере и хорошо знаю, как выглядит выгорание изнутри. Поэтому о работе, деньгах и усталости говорю так же серьёзно, как о детских историях.</p>
+    <section id="ch1" style="text-align: center; background: #F0DCC4; padding: clamp(34px, 7vw, 46px) clamp(24px, 6vw, 40px); border-radius: 3px;">
+      <div style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 15px; color: #3E6E90; margin-bottom: 14px;">О психологе</div>
+      <h2 style="font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(28px, 6.5vw, 38px); line-height: 1.2; color: #1E3A4D; margin: 0 0 26px;">Обо мне</h2>
+      <p style="margin: 0 0 18px; font-size: 15px; line-height: 1.85; color: #33505F; text-align: left;">Меня зовут Артём, я практикующий психолог с двенадцатилетним опытом. Работаю с людьми, которым трудно молчать о том, что происходит внутри. Окончил факультет психологии, прошёл длительную подготовку по человекоцентрированному подходу, регулярно прохожу личную терапию и супервизию.</p>
+      <p style="margin: 0 0 28px; font-size: 15px; line-height: 1.85; color: #33505F; text-align: left;">До психологии работал в другой сфере и хорошо знаю, как выглядит выгорание изнутри. Поэтому о работе, деньгах и усталости говорю так же серьёзно, как о детских историях.</p>
       <!-- фото портрета добавим позже -->
     </section>
 
     <!-- С чем работаю -->
-    <section id="ch2" style="text-align: center; background: #E7E6ED; padding: clamp(20px, 4vw, 26px) clamp(24px, 6vw, 40px) clamp(34px, 7vw, 46px); border-radius: 3px;">
+    <section id="ch2" style="text-align: center; background: #DCE6ED; padding: clamp(20px, 4vw, 26px) clamp(24px, 6vw, 40px) clamp(34px, 7vw, 46px); border-radius: 3px;">
       <div style="width: min(210px, 54vw); margin: 0 auto 12px;">
         <img src="foto2.png" alt="Роза" loading="lazy" style="display: block; width: 100%; border-radius: 4px;">
       </div>
-      <div style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 15px; color: #163044; margin-bottom: 14px;">С чем работаю</div>
-      <h2 style="font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(28px, 6.5vw, 38px); line-height: 1.2; color: #12283A; margin: 0 0 26px;">С какими запросами приходят</h2>
-      <p style="margin: 0 0 26px; font-size: 15px; line-height: 1.85; color: #163044; text-align: left;">Поводом редко становится одна большая причина. Чаще это накопившееся: не спится, всё раздражает, вроде всё в порядке — а радости нет.</p>
+      <div style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 15px; color: #3E6E90; margin-bottom: 14px;">С чем работаю</div>
+      <h2 style="font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(28px, 6.5vw, 38px); line-height: 1.2; color: #1E3A4D; margin: 0 0 26px;">С какими запросами приходят</h2>
+      <p style="margin: 0 0 26px; font-size: 15px; line-height: 1.85; color: #33505F; text-align: left;">Поводом редко становится одна большая причина. Чаще это накопившееся: не спится, всё раздражает, вроде всё в порядке — а радости нет.</p>
       <div style="display: grid; gap: 0; text-align: left;">
         <div style="display: flex; gap: 14px; align-items: baseline; padding: 12px 0; border-bottom: 1px solid rgba(60,70,66,0.18); font-size: 15px; line-height: 1.6; color: #152B36;">
           <span style="font-family: ui-monospace, Menlo, monospace; font-size: 10.5px; color: #1D323E;">01</span>
@@ -173,60 +169,60 @@
     </section>
 
     <!-- Подход в работе -->
-    <section id="ch3" style="text-align: center; background: #87C5EA; padding: clamp(34px, 7vw, 46px) clamp(24px, 6vw, 40px); border-radius: 3px;">
+    <section id="ch3" style="text-align: center; background: #B9D4E8; padding: clamp(34px, 7vw, 46px) clamp(24px, 6vw, 40px); border-radius: 3px;">
       <div style="width: min(170px, 42vw); margin: 0 auto 24px;">
         <img src="foto3.png" alt="Лис" loading="lazy" style="display: block; width: 100%; border-radius: 4px;">
       </div>
-      <div style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 15px; color: #163044; margin-bottom: 14px;">Подход в работе</div>
-      <h2 style="font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(28px, 6.5vw, 38px); line-height: 1.2; color: #12283A; margin: 0 0 26px;">Как я работаю</h2>
-      <p style="margin: 0 0 30px; font-family: 'Cormorant Garamond', serif; font-size: clamp(20px, 5vw, 25px); line-height: 1.45; color: #12283A;">Вы — эксперт по своей жизни. Моя работа — создать условия, в которых это снова слышно.</p>
+      <div style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 15px; color: #3E6E90; margin-bottom: 14px;">Подход в работе</div>
+      <h2 style="font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(28px, 6.5vw, 38px); line-height: 1.2; color: #1E3A4D; margin: 0 0 26px;">Как я работаю</h2>
+      <p style="margin: 0 0 30px; font-family: 'Cormorant Garamond', serif; font-size: clamp(20px, 5vw, 25px); line-height: 1.45; color: #1E3A4D;">Вы — эксперт по своей жизни. Моя работа — создать условия, в которых это снова слышно.</p>
       <div style="display: grid; gap: 22px; text-align: left;">
         <div>
-          <div style="font-size: 15px; color: #163044; margin-bottom: 6px;">Принятие</div>
-          <p style="margin: 0; font-size: 14.5px; line-height: 1.8; color: #163044;">Ничего из сказанного вами не будет оценено. Здесь не нужно быть удобным клиентом.</p>
+          <div style="font-size: 15px; color: #1E3A4D; margin-bottom: 6px;">Принятие</div>
+          <p style="margin: 0; font-size: 14.5px; line-height: 1.8; color: #33505F;">Ничего из сказанного вами не будет оценено. Здесь не нужно быть удобным клиентом.</p>
         </div>
         <div>
-          <div style="font-size: 15px; color: #163044; margin-bottom: 6px;">Подлинность</div>
-          <p style="margin: 0; font-size: 14.5px; line-height: 1.8; color: #163044;">Я остаюсь живым человеком в кабинете, а не нейтральной фигурой без реакций.</p>
+          <div style="font-size: 15px; color: #1E3A4D; margin-bottom: 6px;">Подлинность</div>
+          <p style="margin: 0; font-size: 14.5px; line-height: 1.8; color: #33505F;">Я остаюсь живым человеком в кабинете, а не нейтральной фигурой без реакций.</p>
         </div>
         <div>
-          <div style="font-size: 15px; color: #163044; margin-bottom: 6px;">Ваш темп</div>
-          <p style="margin: 0; font-size: 14.5px; line-height: 1.8; color: #163044;">Мы не идём глубже, чем вы готовы сегодня. Пауза — тоже часть работы.</p>
+          <div style="font-size: 15px; color: #1E3A4D; margin-bottom: 6px;">Ваш темп</div>
+          <p style="margin: 0; font-size: 14.5px; line-height: 1.8; color: #33505F;">Мы не идём глубже, чем вы готовы сегодня. Пауза — тоже часть работы.</p>
         </div>
       </div>
     </section>
 
     <!-- Формат встреч -->
-    <section id="ch4" style="text-align: center; color: #F2F6FA; background: #315A72; padding: clamp(34px, 7vw, 46px) clamp(24px, 6vw, 40px); border-radius: 3px;">
-      <div style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 15px; color: #FFFFFF; margin-bottom: 14px;">Формат встреч</div>
-      <h2 style="font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(28px, 6.5vw, 38px); line-height: 1.2; margin: 0 0 26px;">Как проходят консультации</h2>
+    <section id="ch4" style="text-align: center; color: #33505F; background: #9AC1DC; padding: clamp(34px, 7vw, 46px) clamp(24px, 6vw, 40px); border-radius: 3px;">
+      <div style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 15px; color: #3E6E90; margin-bottom: 14px;">Формат встреч</div>
+      <h2 style="font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(28px, 6.5vw, 38px); line-height: 1.2; color: #1E3A4D; margin: 0 0 26px;">Как проходят консультации</h2>
       <div style="display: grid; gap: 0; text-align: left;">
-        <div style="display: grid; grid-template-columns: 38px 1fr; gap: 18px; padding: 18px 0; border-top: 1px solid rgba(242,248,247,0.3);">
-          <div style="font-family: 'Cormorant Garamond', serif; font-size: 22px; line-height: 1; color: #FFD9B8;">01</div>
+        <div style="display: grid; grid-template-columns: 38px 1fr; gap: 18px; padding: 18px 0; border-top: 1px solid rgba(30,58,77,0.18);">
+          <div style="font-family: 'Cormorant Garamond', serif; font-size: 22px; line-height: 1; color: #5C86A0;">01</div>
           <div>
-            <div style="font-size: 15.5px; margin-bottom: 6px;">Знакомство, 30 минут</div>
-            <p style="margin: 0; font-size: 14px; line-height: 1.8; color: #FFFFFF;">Короткий разговор без оплаты: вы рассказываете, что происходит, я — как могу быть полезен.</p>
+            <div style="font-size: 15.5px; margin-bottom: 6px; color: #1E3A4D;">Знакомство, 30 минут</div>
+            <p style="margin: 0; font-size: 14px; line-height: 1.8; color: #33505F;">Короткий разговор без оплаты: вы рассказываете, что происходит, я — как могу быть полезен.</p>
           </div>
         </div>
-        <div style="display: grid; grid-template-columns: 38px 1fr; gap: 18px; padding: 18px 0; border-top: 1px solid rgba(242,248,247,0.3);">
-          <div style="font-family: 'Cormorant Garamond', serif; font-size: 22px; line-height: 1; color: #FFD9B8;">02</div>
+        <div style="display: grid; grid-template-columns: 38px 1fr; gap: 18px; padding: 18px 0; border-top: 1px solid rgba(30,58,77,0.18);">
+          <div style="font-family: 'Cormorant Garamond', serif; font-size: 22px; line-height: 1; color: #5C86A0;">02</div>
           <div>
-            <div style="font-size: 15.5px; margin-bottom: 6px;">Первые встречи</div>
-            <p style="margin: 0; font-size: 14px; line-height: 1.8; color: #FFFFFF;">Три-четыре сессии, чтобы осмотреться и сформулировать, к чему идём.</p>
+            <div style="font-size: 15.5px; margin-bottom: 6px; color: #1E3A4D;">Первые встречи</div>
+            <p style="margin: 0; font-size: 14px; line-height: 1.8; color: #33505F;">Три-четыре сессии, чтобы осмотреться и сформулировать, к чему идём.</p>
           </div>
         </div>
-        <div style="display: grid; grid-template-columns: 38px 1fr; gap: 18px; padding: 18px 0; border-top: 1px solid rgba(242,248,247,0.3);">
-          <div style="font-family: 'Cormorant Garamond', serif; font-size: 22px; line-height: 1; color: #FFD9B8;">03</div>
+        <div style="display: grid; grid-template-columns: 38px 1fr; gap: 18px; padding: 18px 0; border-top: 1px solid rgba(30,58,77,0.18);">
+          <div style="font-family: 'Cormorant Garamond', serif; font-size: 22px; line-height: 1; color: #5C86A0;">03</div>
           <div>
-            <div style="font-size: 15.5px; margin-bottom: 6px;">Регулярная работа</div>
-            <p style="margin: 0; font-size: 14px; line-height: 1.8; color: #E9F1F7;">Раз в неделю, в фиксированное время. Регулярность важнее интенсивности.</p>
+            <div style="font-size: 15.5px; margin-bottom: 6px; color: #1E3A4D;">Регулярная работа</div>
+            <p style="margin: 0; font-size: 14px; line-height: 1.8; color: #33505F;">Раз в неделю, в фиксированное время. Регулярность важнее интенсивности.</p>
           </div>
         </div>
-        <div style="display: grid; grid-template-columns: 38px 1fr; gap: 18px; padding: 18px 0; border-top: 1px solid rgba(242,248,247,0.3); border-bottom: 1px solid rgba(242,248,247,0.3);">
-          <div style="font-family: 'Cormorant Garamond', serif; font-size: 22px; line-height: 1; color: #FFD9B8;">04</div>
+        <div style="display: grid; grid-template-columns: 38px 1fr; gap: 18px; padding: 18px 0; border-top: 1px solid rgba(30,58,77,0.18); border-bottom: 1px solid rgba(30,58,77,0.18);">
+          <div style="font-family: 'Cormorant Garamond', serif; font-size: 22px; line-height: 1; color: #5C86A0;">04</div>
           <div>
-            <div style="font-size: 15.5px; margin-bottom: 6px;">Завершение</div>
-            <p style="margin: 0; font-size: 14px; line-height: 1.8; color: #E9F1F7;">Терапию заканчивают, а не бросают: на это отводятся отдельные встречи.</p>
+            <div style="font-size: 15.5px; margin-bottom: 6px; color: #1E3A4D;">Завершение</div>
+            <p style="margin: 0; font-size: 14px; line-height: 1.8; color: #33505F;">Терапию заканчивают, а не бросают: на это отводятся отдельные встречи.</p>
           </div>
         </div>
       </div>
@@ -236,36 +232,36 @@
     </section>
 
     <!-- Стоимость -->
-    <section id="ch5" style="text-align: center; color: #F1F5F8; background: #244A66; padding: clamp(34px, 7vw, 46px) clamp(24px, 6vw, 40px); border-radius: 3px;">
+    <section id="ch5" style="text-align: center; color: #EAF3FA; background: #5E93B3; padding: clamp(34px, 7vw, 46px) clamp(24px, 6vw, 40px); border-radius: 3px;">
       <div style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 15px; color: #FFFFFF; margin-bottom: 14px;">Стоимость</div>
-      <h2 style="font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(28px, 6.5vw, 38px); line-height: 1.2; margin: 0 0 30px;">Стоимость консультаций</h2>
+      <h2 style="font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(28px, 6.5vw, 38px); line-height: 1.2; color: #FFFFFF; margin: 0 0 30px;">Стоимость консультаций</h2>
       <div style="display: grid; gap: 26px; text-align: left;">
         <div>
-          <div style="font-family: 'Cormorant Garamond', serif; font-size: clamp(28px, 7vw, 36px); line-height: 1;">Бесплатно</div>
-          <div style="font-size: 13.5px; color: #C9D6E2; margin-top: 8px;">Знакомство · 30 минут, онлайн</div>
+          <div style="font-family: 'Cormorant Garamond', serif; font-size: clamp(28px, 7vw, 36px); line-height: 1; color: #FFFFFF;">Бесплатно</div>
+          <div style="font-size: 13.5px; color: #D9E9F2; margin-top: 8px;">Знакомство · 30 минут, онлайн</div>
         </div>
-        <div style="height: 1px; background: rgba(241,246,245,0.22);"></div>
+        <div style="height: 1px; background: rgba(255,255,255,0.3);"></div>
         <div>
-          <div style="font-family: 'Cormorant Garamond', serif; font-size: clamp(28px, 7vw, 36px); line-height: 1;">5 000 ₽</div>
-          <div style="font-size: 13.5px; color: #C9D6E2; margin-top: 8px;">Индивидуальная сессия · 50 минут</div>
+          <div style="font-family: 'Cormorant Garamond', serif; font-size: clamp(28px, 7vw, 36px); line-height: 1; color: #FFFFFF;">5 000 ₽</div>
+          <div style="font-size: 13.5px; color: #D9E9F2; margin-top: 8px;">Индивидуальная сессия · 50 минут</div>
         </div>
-        <p style="margin: 0; font-size: 13.5px; line-height: 1.8; color: #CDD8E4;">Отмена без оплаты — не позднее чем за сутки. Для студентов и людей в трудной ситуации есть несколько мест по сниженной стоимости.</p>
+        <p style="margin: 0; font-size: 13.5px; line-height: 1.8; color: #D9E9F2;">Отмена без оплаты — не позднее чем за сутки. Для студентов и людей в трудной ситуации есть несколько мест по сниженной стоимости.</p>
       </div>
     </section>
 
     <!-- Запись -->
-    <section id="ch6" style="text-align: center; color: #F4F8FB; background: #14303F; padding: clamp(40px, 8vw, 52px) clamp(24px, 6vw, 40px); border-radius: 3px;">
+    <section id="ch6" style="text-align: center; color: #F4F8FB; background: #2C4A61; padding: clamp(40px, 8vw, 52px) clamp(24px, 6vw, 40px); border-radius: 3px;">
       <div style="width: min(140px, 36vw); margin: 0 auto 26px;">
         <img src="foto5.png" alt="Звезда или планета" loading="lazy" style="display: block; width: 100%; border-radius: 4px;">
       </div>
       <div style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 15px; color: #A9D8F2; margin-bottom: 14px;">Запись на консультацию</div>
-      <h2 style="font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(26px, 6.5vw, 36px); line-height: 1.24; margin: 0 0 18px; text-wrap: pretty;">Если вы дочитали до этого места — вероятно, стоит поговорить</h2>
+      <h2 style="font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(26px, 6.5vw, 36px); line-height: 1.24; margin: 0 0 18px; text-wrap: pretty; color: #F4F8FB;">Если вы дочитали до этого места — вероятно, стоит поговорить</h2>
       <p style="margin: 0 auto 30px; font-size: 14.5px; line-height: 1.85; color: #CFE3EE; max-width: 30em;">Напишите пару слов о том, что происходит. Я отвечаю в течение дня и предложу время для знакомства.</p>
       <div style="display: grid; gap: 12px; max-width: 340px; margin: 0 auto;">
-        <a href="#ch6" style="background: #E7E6ED; color: #1E3A4D; padding: 14px 26px; font-size: 14px; border-radius: 999px; text-align: center;">Написать в Telegram</a>
-        <a href="mailto:hello@example.com" style="border: 1px solid rgba(231,230,237,0.4); color: #F4F8FB; padding: 14px 26px; font-size: 14px; border-radius: 999px; text-align: center;">hello@example.com</a>
+        <a href="#ch6" style="background: #F4F8FB; color: #1E3A4D; padding: 14px 26px; font-size: 14px; border-radius: 999px; text-align: center;">Написать в Telegram</a>
+        <a href="mailto:hello@example.com" style="border: 1px solid rgba(244,248,251,0.4); color: #F4F8FB; padding: 14px 26px; font-size: 14px; border-radius: 999px; text-align: center;">hello@example.com</a>
       </div>
-      <div style="display: flex; justify-content: space-between; gap: 20px; margin-top: 54px; padding-top: 18px; border-top: 1px solid rgba(231,230,237,0.18); font-size: 12px; color: #9CC3DA;">
+      <div style="display: flex; justify-content: space-between; gap: 20px; margin-top: 54px; padding-top: 18px; border-top: 1px solid rgba(244,248,251,0.2); font-size: 12px; color: #9CC3DA;">
         <span>Артём Северов · психолог</span>
         <span>© 2026</span>
       </div>
