@@ -38,18 +38,18 @@
   .side-art--hero img {
     display: block; width: 100%; height: auto; opacity: 0.55;
     filter: saturate(0.6) sepia(0.05) brightness(1.03);
-    -webkit-mask-image: linear-gradient(to right, #000 0%, #000 34%, transparent 58%);
-    mask-image: linear-gradient(to right, #000 0%, #000 34%, transparent 58%);
+    -webkit-mask-image: radial-gradient(ellipse 100% 100% at 0% 0%, #000 30%, transparent 88%);
+    mask-image: radial-gradient(ellipse 100% 100% at 0% 0%, #000 30%, transparent 88%);
   }
   /* море Моне: приглушённый снимок, будто выглядывает из-под карточки «Обо мне» */
   .side-art--sea-peek {
-    right: -130px; top: 585px; width: 220px; height: 270px; z-index: -1;
+    right: -130px; top: 520px; width: 220px; height: 270px; z-index: -1;
     border-radius: 4px; overflow: hidden; transform: rotate(-13deg);
     box-shadow: 0 16px 34px rgba(30, 20, 10, 0.22);
     filter: blur(1.5px);
   }
   .side-art--sea-peek img {
-    display: block; width: 100%; height: 100%; object-fit: cover; object-position: 78% 42%;
+    display: block; width: 100%; height: 100%; object-fit: cover; object-position: 100% 42%;
     opacity: 0.88; filter: saturate(0.75) brightness(1.02);
   }
   /* шапка: полная ширина страницы, без переноса на новую строку */
@@ -223,7 +223,7 @@
       </div>
     </section>
     <!-- Подход в работе -->
-    <section id="ch3" style="position: relative; text-align: center; background: #D1E3F0; padding: clamp(34px, 7vw, 46px) clamp(24px, 6vw, 40px) 160px; border-radius: 3px;"><img src="pic.png" alt="Иллюстрация" class="deco" style="bottom:0; right:0; width:340px; height:auto; opacity:0.55;">
+    <section id="ch3" style="position: relative; text-align: center; background: #D1E3F0; padding: clamp(34px, 7vw, 46px) clamp(24px, 6vw, 40px) 160px; border-radius: 3px;"><img src="pic.png" alt="Иллюстрация" class="deco" style="bottom:0; left:0; width:340px; height:auto; opacity:0.55;">
       <div style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 16.5px; color: #3E6E90; margin-bottom: 14px;">Подход в работе</div>
       <h2 style="font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(28px, 6.5vw, 38px); line-height: 1.2; color: #1E3A4D; margin: 0 0 26px;">Как я работаю</h2>
       <p style="margin: 0 0 30px; font-family: 'Cormorant Garamond', serif; font-size: clamp(20px, 5vw, 25px); line-height: 1.45; color: #1E3A4D;">Вы — эксперт по своей жизни. Моя работа — создать условия, в которых это снова слышно.</p>
